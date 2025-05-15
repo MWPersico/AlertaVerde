@@ -7,6 +7,15 @@ Entre as funcionalidades estão o registro anônimo, uso de geolocalização, en
 
 ---
 
+## Grupo 4
+Nosso grupo é composto por:
+
+Angela Brito Martins Meira 
+Caroline Costa Saldanha 
+José Renato das Graças Filho 
+Luiz Guilherme Longatto Adorno 
+Marcos Willian Gonçalves Persico 
+
 ## Índice  
 - [Visão Geral](#visão-geral)  
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)  
@@ -20,7 +29,9 @@ Entre as funcionalidades estão o registro anônimo, uso de geolocalização, en
 ---
 
 ## Visão Geral  
-Este projeto consiste no desenvolvimento de uma plataforma web dedicada ao registro e acompanhamento de denúncias ambientais, como desmatamento, queimadas ilegais, poluição e tráfico de animais. O sistema foi pensado para ser acessível, seguro e fácil de usar, permitindo que qualquer cidadão ou organização possa contribuir ativamente na defesa do meio ambiente.
+O aplicativo tem como objetivo oferecer uma plataforma segura e acessível para que os cidadãos possam relatar incidentes ambientais, como desmatamento, queimadas ilegais, poluição, tráfico de animais, entre outros. . A plataforma visa preencher a lacuna na denúncia de crimes ambientais, capacitando a sociedade para agir na proteção do meio ambiente e contribuindo para a proteção de práticas ambientais. 
+
+O público-alvo inclui ONGs, empresas sustentáveis e cidadãos conscientes.
 
 Entre as funcionalidades estão o registro anônimo, uso de geolocalização, envio de fotos ou vídeos como evidência, e armazenamento seguro das informações. A solução adota práticas ágeis e prioriza a experiência do usuário, oferecendo uma ferramenta confiável para ampliar o alcance da fiscalização ambiental colaborativa.
 
