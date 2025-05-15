@@ -10,11 +10,11 @@ Entre as funcionalidades estão o registro anônimo, uso de geolocalização, en
 ## Grupo 4
 Nosso grupo é composto por:
 
-Angela Brito Martins Meira 
-Caroline Costa Saldanha 
-José Renato das Graças Filho 
-Luiz Guilherme Longatto Adorno 
-Marcos Willian Gonçalves Persico 
+- Angela Brito Martins Meira 
+- Caroline Costa Saldanha
+- José Renato das Graças Filho
+- Luiz Guilherme Longatto Adorno
+- Marcos Willian Gonçalves Persico 
 
 ## Índice  
 - [Visão Geral](#visão-geral)  
