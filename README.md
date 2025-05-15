@@ -14,7 +14,9 @@ Nosso grupo é composto por:
 - Caroline Costa Saldanha
 - José Renato das Graças Filho
 - Luiz Guilherme Longatto Adorno
-- Marcos Willian Gonçalves Persico 
+- Marcos Willian Gonçalves Persico
+
+---
 
 ## Índice  
 - [Visão Geral](#visão-geral)  
