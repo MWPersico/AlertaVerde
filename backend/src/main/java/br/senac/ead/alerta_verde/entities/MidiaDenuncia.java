@@ -9,7 +9,7 @@ public class MidiaDenuncia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String url_arquivo;
+    private String urlArquivo;
     private TipoArquivoEnum tipo;
     @ManyToOne
     @JoinColumn(name="id_denuncia")
@@ -17,9 +17,9 @@ public class MidiaDenuncia {
 
     public MidiaDenuncia(){}
 
-    public MidiaDenuncia(Integer id, String url_arquivo, TipoArquivoEnum tipo, Denuncia denuncia) {
+    public MidiaDenuncia(Integer id, String urlArquivo, TipoArquivoEnum tipo, Denuncia denuncia) {
         this.id = id;
-        this.url_arquivo = url_arquivo;
+        this.urlArquivo = urlArquivo;
         this.tipo = tipo;
         this.denuncia = denuncia;
     }
@@ -32,12 +32,12 @@ public class MidiaDenuncia {
         this.id = id;
     }
 
-    public String getUrl_arquivo() {
-        return url_arquivo;
+    public String getUrlArquivo() {
+        return urlArquivo;
     }
 
-    public void setUrl_arquivo(String url_arquivo) {
-        this.url_arquivo = url_arquivo;
+    public void setUrlArquivo(String urlArquivo) {
+        this.urlArquivo = urlArquivo;
     }
 
     public TipoArquivoEnum getTipo() {

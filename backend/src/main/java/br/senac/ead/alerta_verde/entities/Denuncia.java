@@ -6,6 +6,7 @@ import jakarta.persistence.*;
 
 import java.time.Instant;
 import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="tb_denuncia")
@@ -18,7 +19,7 @@ public class Denuncia {
     private String descricao;
     private CategoriaDenunciaEnum categoria;
     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-    private Instant DataDenuncia;
+    private Instant dataDenuncia;
     private Double latitude;
     private Double longitude;
     private Boolean anonima;
@@ -28,7 +29,7 @@ public class Denuncia {
     @JoinColumn(name="id_usuario")
     private Usuario usuario;
     @OneToMany(mappedBy = "denuncia")
-    private HashSet<MidiaDenuncia> midias = new HashSet<>();
+    private Set<MidiaDenuncia> midias = new HashSet<>();
 
     public Denuncia(){}
 
@@ -37,7 +38,7 @@ public class Denuncia {
         this.titulo = titulo;
         this.descricao = descricao;
         this.categoria = categoria;
-        DataDenuncia = dataDenuncia;
+        this.dataDenuncia = dataDenuncia;
         this.latitude = latitude;
         this.longitude = longitude;
         this.anonima = anonima;
@@ -79,11 +80,11 @@ public class Denuncia {
     }
 
     public Instant getDataDenuncia() {
-        return DataDenuncia;
+        return dataDenuncia;
     }
 
     public void setDataDenuncia(Instant dataDenuncia) {
-        DataDenuncia = dataDenuncia;
+        dataDenuncia = dataDenuncia;
     }
 
     public Double getLatitude() {
@@ -134,7 +135,7 @@ public class Denuncia {
         this.usuario = usuario;
     }
 
-    public HashSet<MidiaDenuncia> getMidias(){
+    public Set<MidiaDenuncia> getMidias(){
         return midias;
     }
 

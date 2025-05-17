@@ -3,6 +3,7 @@ package br.senac.ead.alerta_verde.entities;
 import jakarta.persistence.*;
 
 import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="tb_usuario")
@@ -16,7 +17,7 @@ public class Usuario {
     private String senhaHash;
     private String telefone;
     @OneToMany(mappedBy = "usuario")
-    private HashSet<Denuncia> denuncias = new HashSet<>();
+    private Set<Denuncia> denuncias = new HashSet<>();
 
     public Usuario(){}
 
@@ -68,7 +69,7 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public HashSet<Denuncia> getDenuncias(){
+    public Set<Denuncia> getDenuncias(){
         return denuncias;
     }
 
