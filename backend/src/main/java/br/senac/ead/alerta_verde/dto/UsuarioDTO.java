@@ -1,16 +1,25 @@
 package br.senac.ead.alerta_verde.dto;
 
 import br.senac.ead.alerta_verde.entities.Usuario;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
+
 import java.util.HashSet;
 import java.util.Set;
 
 public class UsuarioDTO {
-    private final Integer id;
-    private final String nome;
-    private final String email;
-    private final String senhaHash;
-    private final String telefone;
-    private final Set<DenunciaMinDTO> denuncias = new HashSet<>();
+    private Integer id;
+    @NotEmpty
+    private String nome;
+    @NotEmpty
+    @Email
+    private String email;
+    @NotEmpty
+    private String senhaHash;
+    private String telefone;
+    private Set<DenunciaMinDTO> denuncias = new HashSet<>();
+
+    public UsuarioDTO(){}
 
     public UsuarioDTO(Usuario usuario){
         id = usuario.getId();

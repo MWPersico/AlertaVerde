@@ -33,4 +33,12 @@ public class ControllerExceptionHandler {
         );
         return ResponseEntity.status(status).body(err);
     }
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<CustomError> exception(Exception ex, HttpServletRequest request){
+        HttpStatus status = HttpStatus.INTERNAL_SERVER_ERROR;
+        CustomError err = new CustomError(Instant.now(), status.value(), ex.getMessage(), request.getRequestURI());
+
+        return ResponseEntity.status(status).body(err);
+    }
 }

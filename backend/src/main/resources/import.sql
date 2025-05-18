@@ -1,6 +1,6 @@
-INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Paulo Engenheiro', 'paulo@email.com', '123', '11999999999');
-INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Helena Ativista', 'helena@email.com', '123', '11988888888');
-INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Jessica Veterinária', 'jessica@email.com', '123', '11977777777');
+INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Paulo Engenheiro', 'paulo@email.com', '$2a$12$mEdTmAQw5bY.ZLofbRbtBOXNkNBNME1WNSDbB2yb.jIAdSA79/lmO', '11999999999');
+INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Helena Ativista', 'helena@email.com', '$2a$12$sa4k6FZy9KqaT8pIIE56MepcnIwgzeUF.PUcgUwf0nHC22ce6hJEi', '11988888888');
+INSERT INTO tb_usuario (nome, email, senha_hash, telefone) VALUES ('Jessica Veterinária', 'jessica@email.com', '$2a$12$C5X/6HgpDFIjxVuDqyJG7./ttu9YbKvtpuldhCSzSAEdOUawwTQXC', '11977777777');
 
 INSERT INTO tb_denuncia (titulo, descricao, categoria, latitude, longitude, anonima, id_usuario, status, data_denuncia, codigo_rastreamento) VALUES ('Queimada em área urbana', 'Foi detectada fumaça forte próxima a uma área de mata.', 1, -23.5505, -46.6333, false, 1, 0, CURRENT_TIMESTAMP, 'ABC123');
 

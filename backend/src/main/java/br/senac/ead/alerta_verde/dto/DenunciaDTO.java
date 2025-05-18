@@ -3,24 +3,30 @@ package br.senac.ead.alerta_verde.dto;
 import br.senac.ead.alerta_verde.entities.Denuncia;
 import br.senac.ead.alerta_verde.enums.CategoriaDenunciaEnum;
 import br.senac.ead.alerta_verde.enums.StatusDenunciaEnum;
+import jakarta.validation.constraints.NotEmpty;
 
 import java.time.Instant;
 import java.util.HashSet;
 import java.util.Set;
 
 public class DenunciaDTO {
-    private final Integer id;
-    private final String titulo;
-    private final String descricao;
-    private final CategoriaDenunciaEnum categoria;
-    private final Instant dataDenuncia;
-    private final Double latitude;
-    private final Double longitude;
-    private final Boolean anonima;
-    private final StatusDenunciaEnum status;
-    private final String codigoRastreamento;
-    private final UsuarioMinDTO usuario;
-    private final Set<MidiaDenunciaMinDTO> midias = new HashSet<>();
+    private Integer id;
+    @NotEmpty
+    private String titulo;
+    @NotEmpty
+    private String descricao;
+    private CategoriaDenunciaEnum categoria;
+    private Instant dataDenuncia;
+    private Double latitude;
+    private Double longitude;
+    private Boolean anonima;
+    private StatusDenunciaEnum status;
+    private String codigoRastreamento;
+    @NotEmpty
+    private UsuarioMinDTO usuario;
+    private Set<MidiaDenunciaMinDTO> midias = new HashSet<>();
+
+    public DenunciaDTO(){}
 
     public DenunciaDTO(Denuncia denuncia){
         id = denuncia.getId();

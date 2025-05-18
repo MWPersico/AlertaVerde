@@ -1,11 +1,15 @@
 package br.senac.ead.alerta_verde.dto;
 
 import br.senac.ead.alerta_verde.entities.Usuario;
+import jakarta.validation.constraints.NotEmpty;
 
 public class UsuarioMinDTO {
-    private final Integer id;
-    private final String nome;
-    private final String email;
+    @NotEmpty
+    private Integer id;
+    private String nome;
+    private String email;
+
+    public UsuarioMinDTO(){}
 
     public UsuarioMinDTO(Usuario usuario){
         id = usuario.getId();
