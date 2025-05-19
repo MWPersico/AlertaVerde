@@ -102,20 +102,20 @@ A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em mem
 
 ### **Principais Telas**
 
-#### Tela de Cadastro
-![Tela de Cadastro](/cadastro.html.png)
+#### Tela de Cadastro  
+![Tela de Cadastro](Prototipo%20Figma/cadastro.html.png)
 
-#### Tela Explorar
-![Tela Explorar](/explorar.html.png)
+#### Tela Explorar  
+![Tela Explorar](Prototipo%20Figma/explorar.html.png)
 
-#### Tela de Login
-![Tela de Login](/login.html.png)
+#### Tela de Login  
+![Tela de Login](Prototipo%20Figma/login.html.png)
 
-#### Tela Sobre
-![Tela Sobre](/sobre.html.png)
+#### Tela Sobre  
+![Tela Sobre](Prototipo%20Figma/sobre.html.png)
 
-#### Tela de Acompanhamento
-![Tela Acompanhamento](/tela_acompanhamento.html.png)
+#### Tela de Acompanhamento  
+![Tela Acompanhamento](Prototipo%20Figma/tela_acompanhamento.html.png)
 
-#### Tela de Conclusão
-![Tela Conclusão](/tela_conclusão.html.png)
+#### Tela de Conclusão  
+![Tela Conclusão](Prototipo%20Figma/tela_conclusão.html.png)
