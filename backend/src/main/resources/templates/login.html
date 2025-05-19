@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
+  <a href="/explorar" class="voltar-topo">← Voltar para Explorar</a>
   <div class="login-container">
     <div class="logo-container">
       <img src="/z2_solutions.png" alt="Zero Two Solutions Logo" class="logo">
       <h1>Login - Zero Two Solutions</h1>
     </div>
 
-    <form class="login-form" action="/login" method="post">
+    <form id="login-form">
       <label for="email">E-mail:</label>
       <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
@@ -24,12 +25,44 @@
       <button type="submit">Entrar</button>
     </form>
 
+    <div id="mensagem-erro" style="color: white; background: red; display: none; margin-top: 10px; padding: 5px;"></div>
+
     <p>Não tem uma conta? <a href="cadastro">Cadastre-se</a></p>
   </div>
 
   <footer>
     <p>&copy; 2025 Zero Two Solutions. Todos os direitos reservados.</p>
   </footer>
+  <script>
+    document.getElementById('login-form').addEventListener('submit', async function (e) {
+    e.preventDefault(); // evita recarregar a página
+
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const erroDiv = document.getElementById('mensagem-erro');
+
+    try {
+      const response = await fetch('/usuario/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({ email, password })
+      });
+
+      if (response.ok) {
+        const user = await response.json();
+        localStorage.setItem('usuarioId', user.id);
+        window.location.href = '/explorar'; // redireciona após login
+      } else {
+        const texto = await response.text();
+        erroDiv.innerText = texto;
+        erroDiv.style.display = 'block';
+      }
+    } catch (err) {
+      erroDiv.innerText = 'Erro ao conectar ao servidor.';
+      erroDiv.style.display = 'block';
+    }
+  });
+  </script>
 </body>
 </html>
 

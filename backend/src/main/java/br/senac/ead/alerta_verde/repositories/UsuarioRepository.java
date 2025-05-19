@@ -11,7 +11,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     @Query("""
         SELECT DISTINCT a
         FROM Usuario a
-        JOIN FETCH a.denuncias
+        LEFT JOIN FETCH a.denuncias
         WHERE a.id = :id
     """)
     Optional<Usuario> findByIdWithDenuncias(Integer id);
@@ -19,7 +19,7 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
     @Query("""
         SELECT a
         FROM Usuario a
-        JOIN FETCH a.denuncias
+        LEFT JOIN FETCH a.denuncias
     """)
     List<Usuario> findAllWithDenuncias();
 
