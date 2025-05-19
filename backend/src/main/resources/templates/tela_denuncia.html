@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fazer Denúncia - Zero Two Solutions</title>
+  <link rel="icon" href="/z2_solutions.png" type="image/png" />
+  <link rel="stylesheet" href="/styles.css" />
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-container">
+      <img src="/z2_solutions.png" alt="Logo Zero Two Solutions" class="logo" />
+      <h1>Fazer Denúncia</h1>
+    </div>
+
+    <form class="login-form" onsubmit="enviarDenuncia(event)">
+      <label for="categoria">Categoria:</label>
+      <select id="categoria" required>
+        <option value="">Selecione</option>
+        <option value="desmatamento">Desmatamento</option>
+        <option value="poluicao">Poluição</option>
+        <option value="animais">Animais em risco</option>
+      </select>
+
+      <label for="local">Local:</label>
+      <input type="text" id="local" placeholder="Buscando sua localização..." required readonly>
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" placeholder="Descreva o que aconteceu" rows="4" required></textarea>
+
+      <label for="imagem">Foto (opcional):</label>
+      <input type="file" id="imagem" accept="image/*" />
+
+      <button type="submit">Enviar Denúncia</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Zero Two Solutions. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/tela_denuncia.js"></script>
+</body>
+</html>

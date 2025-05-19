@@ -1,0 +1,425 @@
+:root {
+    --primary-color: #5c67f2;
+    --primary-hover: #4453c3;
+    --danger-color: #f44336;
+    --danger-hover: #e53935;
+    --text-color: #333;
+    --bg-color: #f9f9f9;
+    --white: #fff;
+  }
+  
+  /* RESET */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* ELEMENTOS GLOBAIS */
+  button, a {
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  a:hover {
+    color: var(--primary-hover);
+  }
+  
+  img {
+    max-width: 260px;
+    width: 60%;
+    height: auto;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: white;
+  }
+  button:hover {
+    background-color: var(--primary-hover);
+  }
+  
+  /* HEADER */
+  header {
+    background-color: #050b5c;
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  header nav ul li a {
+    color: var(--white);
+    font-weight: bold;
+  }
+  
+  /* FOOTER */
+  footer {
+    background-color: #333;
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  /* LOGIN */
+  .login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  .login-container h1 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  .login-form label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+  }
+  .login-form input,
+  .login-form select,
+  .login-form textarea,
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  .login-form button {
+    background: var(--primary-color);
+    color: var(--white);
+  }
+  .login-form button:hover {
+    background: var(--primary-hover);
+  }
+  .login-form p {
+    margin-top: 10px;
+  }
+  
+  /* FORMULÁRIOS */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  form input,
+  .custom-select select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  form button a {
+    color: inherit;
+  }
+  form fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  form legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* SELECT PERSONALIZADO */
+  .custom-select {
+    margin-bottom: 15px;
+    min-height: 35px;
+  }
+  .custom-select select {
+    appearance: none;
+    font-size: 1rem;
+  }
+  
+  /* DASHBOARD */
+  .dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .dashboard-buttons button {
+    width: 250px;
+    padding: 20px 40px;
+    font-size: 16px;
+  }
+  
+  /* CANCELAMENTO */
+  .cancel-link {
+    display: inline-block;
+    padding: 5px;
+    background-color: var(--danger-color);
+    color: var(--white);
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .cancel-link:hover {
+    background-color: var(--danger-hover);
+  }
+  
+  /* TABELA CRUD */
+  .crud-table-container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .crud-table-container table {
+    width: 90%;
+    max-width: 900px;
+    border-collapse: collapse;
+  }
+  .crud-table-container th,
+  .crud-table-container td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  .crud-table-container th {
+    background-color: #f4f4f4;
+  }
+  .crud-table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  .crud-table-container tr:hover {
+    background-color: #f1f1f1;
+  }
+  .crud-table-container a {
+    color: #007bff;
+  }
+  .crud-table-container a:hover {
+    text-decoration: underline;
+  }
+  .crud-table-container:empty {
+    display: none;
+  }
+  .crud-table-container:empty + p {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+  }
+  
+  /* BOTÃO DE DELETAR */
+  .btn-deletar {
+    background-color: #ff5252;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  /* NOTIFICAÇÃO */
+  .notification {
+    margin-top: 20px;
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  /* ÍCONES E MENSAGENS */
+  .success-icon {
+    font-size: 60px;
+    color: #28a745;
+    margin: 20px 0;
+  }
+  .message {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* AVALIAÇÃO */
+  .rating {
+    margin: 20px 0;
+  }
+  .star {
+    font-size: 32px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .star.selected {
+    color: gold;
+  }
+  
+  /* BOTÕES FINAIS */
+  .buttons,
+  .action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  
+  .success-icon {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  .rating {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.selected {
+    color: #FFD700;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .buttons button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  footer {
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+  }
+  
+
+  /* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* Título principal */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Mensagem de sucesso */
+  .success-icon {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  
+  .message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Avaliação com estrelas */
+  .rating {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.selected {
+    color: #FFD700;
+  }
+  
+
