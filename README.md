@@ -7,7 +7,7 @@ Entre as funcionalidades estão o registro anônimo, uso de geolocalização, en
 
 ---
 
-## Grupo 4
+## Grupo 15
 Nosso grupo é composto por:
 
 - Angela Brito Martins Meira 
