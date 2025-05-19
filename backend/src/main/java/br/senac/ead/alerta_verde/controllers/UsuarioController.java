@@ -37,4 +37,14 @@ public class UsuarioController {
                 .toUri();
         return ResponseEntity.created(uri).body(created);
     }
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestParam String email, @RequestParam String password) {
+        Usuario usuario = service.findByEmail(email);
+        if (usuario != null && br.senac.ead.alerta_verde.utils.security.PasswordEncoder.bCryptEncoder.matches(password, usuario.getSenhaHash())) {
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.status(401).body("Usuário ou senha inválidos");
+        }
+    }
 }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Denúncia Concluída - Zero Two Solutions</title>
+  <link rel="icon" href="/z2_solutions.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+      <img src="/z2_solutions.png" alt="Logo Zero Two Solutions" class="logo" />
+      <h1>Denúncia Resolvida</h1>
+  
+      <div class="success-icon">✅</div>
+  
+      <div class="message">
+        Sua denúncia foi <strong>resolvida com sucesso</strong>!<br>
+        Obrigado por contribuir com um mundo melhor. 🌱
+      </div>
+  
+      <div class="rating">
+        <p>Como foi sua experiência com a plataforma?</p>
+        <span class="star" onclick="setRating(1)">★</span>
+        <span class="star" onclick="setRating(2)">★</span>
+        <span class="star" onclick="setRating(3)">★</span>
+        <span class="star" onclick="setRating(4)">★</span>
+        <span class="star" onclick="setRating(5)">★</span>
+      </div>
+  
+      <div class="buttons">
+        <button onclick="submitFeedback()">Enviar Feedback</button>
+        <button onclick="location.href='minhas_denuncias'">Ver Minhas Denúncias</button>
+        <button onclick="location.href='explorar'">Voltar para Explorar</button>
+      </div>
+    </div>
+  
+    <footer>
+      &copy; 2025 Zero Two Solutions. Todos os direitos reservados.
+    </footer>
+  
+    <script>
+      let currentRating = 0;
+  
+      function setRating(stars) {
+        currentRating = stars;
+        const allStars = document.querySelectorAll('.star');
+        allStars.forEach((star, index) => {
+          star.classList.toggle('selected', index < stars);
+        });
+      }
+  
+      function submitFeedback() {
+        if (currentRating === 0) {
+          alert("Por favor, selecione uma avaliação antes de enviar.");
+          return;
+        }
+  
+        alert("Obrigado pelo seu feedback! Sua avaliação foi registrada.");
+  
+        currentRating = 0;
+        setRating(0);
+      }
+    </script>
+  </body>
+  </html>

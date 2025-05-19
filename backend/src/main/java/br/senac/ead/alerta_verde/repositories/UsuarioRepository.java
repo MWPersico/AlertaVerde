@@ -22,4 +22,6 @@ public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
         JOIN FETCH a.denuncias
     """)
     List<Usuario> findAllWithDenuncias();
+
+    Optional<Usuario> findByEmail(String email);
 }
