@@ -24,7 +24,6 @@ Nosso grupo é composto por:
 - [Pré-requisitos](#pré-requisitos)  
 - [Como Rodar o Projeto](#como-rodar-o-projeto)  
 - [Contribuições](#contribuições)  
-- [Protótipo](#protótipo)
 - [API](#api)
 - [Telas](#telas)
 
@@ -64,10 +63,11 @@ Para rodar o projeto, você precisará de:
 - JDK ^17 configurada.  
 
 ## Como Rodar o Projeto  
-
-
-
-
+- Clone o repositório: git clone https://github.com/MWPersico/AlertaVerde.git
+- Abra o projeto em sua IDE
+- Exceute a classe **AlertaVerdeApplication.java**
+- Acesse a aplicação no navegador: http://localhost:8080
+  
 ---
 
 ## Contribuições  
@@ -88,10 +88,6 @@ Quer ajudar a melhorar o projeto? Siga os passos:
 
 ---
 
-## Protótipo
-
----
-
 ## API
 A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em memória para persistência e HIbernate como ferramenta de ORM, disponibilizando operações de leitura, criação, deleção e atualização de entidades.
 
@@ -102,6 +98,6 @@ A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em mem
 
 ### **Principais Telas**
 
-![Prototipo Figma](Prototipo%20Figma/PI%20Alerta%20Verde.png)
+![Prototipo Figma](/Prototipo%20Figma/PI%20Alerta%20Verde.png)
 
 
