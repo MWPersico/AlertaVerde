@@ -91,6 +91,14 @@ Quer ajudar a melhorar o projeto? Siga os passos:
 ## API
 A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em memória para persistência e HIbernate como ferramenta de ORM, disponibilizando operações de leitura, criação, deleção e atualização de entidades.
 
+![Usuarios](https://github.com/MWPersico/AlertaVerde/blob/main/api/consulta_usuarios.png?raw=true)
+![Usuario](https://github.com/MWPersico/AlertaVerde/blob/main/api/consulta_usuario.png?raw=true)
+![NovoUsuario](https://github.com/MWPersico/AlertaVerde/blob/main/api/cadastro_usuario.png?raw=true)
+![Denuncias](https://github.com/MWPersico/AlertaVerde/blob/main/api/consulta_denuncias.png?raw=true)
+![Denuncia](https://github.com/MWPersico/AlertaVerde/blob/main/api/consulta_denuncia.png?raw=true)
+![NovaDenuncia](https://github.com/MWPersico/AlertaVerde/blob/main/api/cadastro_denuncia.png?raw=true)
+![NovaMidia](https://github.com/MWPersico/AlertaVerde/blob/main/api/cadastro_midia_denuncia.png?raw=true)
+![Categorias](https://github.com/MWPersico/AlertaVerde/blob/main/api/cadastro_consulta_categorias.png?raw=true)
 
 ---
 
