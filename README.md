@@ -1,5 +1,3 @@
-![Logo Alerta Verde](/logo1.png)
-
 # Alerta Verde - Sistema de denúncias ambientais  
 
 Este projeto consiste no desenvolvimento de uma plataforma web dedicada ao registro e acompanhamento de denúncias ambientais, como desmatamento, queimadas ilegais, poluição e tráfico de animais. O sistema foi pensado para ser acessível, seguro e fácil de usar, permitindo que qualquer cidadão ou organização possa contribuir ativamente na defesa do meio ambiente.
