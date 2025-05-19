@@ -13,7 +13,7 @@ Nosso grupo é composto por:
 - Angela Brito Martins Meira 
 - Caroline Costa Saldanha
 - José Renato das Graças Filho
-- Luiz Guilherme Longatto Adorno
+- Luiz Guilherme Longatto Adorn
 - Marcos Willian Gonçalves Persico
 
 ---
