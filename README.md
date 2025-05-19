@@ -118,4 +118,4 @@ A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em mem
 ![Tela Acompanhamento](Prototipo%20Figma/tela_acompanhamento.html.png)
 
 #### Tela de Conclusão  
-![Tela Conclusão](Prototipo%20Figma/tela_conclusão.html.png)
+![Tela Conclusão](Prototipo%20Figma/tela_conclus%C3%A3o.html.png)
