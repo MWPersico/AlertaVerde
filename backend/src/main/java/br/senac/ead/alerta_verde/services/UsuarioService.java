@@ -42,4 +42,9 @@ public class UsuarioService {
         usuario.setTelefone(dto.getTelefone());
         usuario.setSenhaHash(PasswordEncoder.bCryptEncoder.encode(dto.getSenhaHash()));
     }
+
+    @Transactional(readOnly = true)
+    public Usuario findByEmail(String email) {
+        return repository.findByEmail(email).orElse(null);
+    }
 }
