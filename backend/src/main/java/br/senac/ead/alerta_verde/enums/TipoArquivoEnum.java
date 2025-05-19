@@ -3,8 +3,8 @@ package br.senac.ead.alerta_verde.enums;
 import br.senac.ead.alerta_verde.interfaces.EnumComDescricao;
 
 public enum TipoArquivoEnum implements EnumComDescricao {
-    IMAGEM(0, "Imagem"),
-    VIDEO(1, "Video");
+    IMAGEM(0, "IMAGEM"),
+    VIDEO(1, "VIDEO");
 
     private final int id;
     private final String descricao;

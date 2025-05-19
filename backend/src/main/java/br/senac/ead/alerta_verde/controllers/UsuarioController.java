@@ -2,6 +2,7 @@ package br.senac.ead.alerta_verde.controllers;
 
 import br.senac.ead.alerta_verde.dto.UsuarioDTO;
 import br.senac.ead.alerta_verde.dto.UsuarioMinDTO;
+import br.senac.ead.alerta_verde.entities.Usuario;
 import br.senac.ead.alerta_verde.services.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -42,7 +43,7 @@ public class UsuarioController {
     public ResponseEntity<?> login(@RequestParam String email, @RequestParam String password) {
         Usuario usuario = service.findByEmail(email);
         if (usuario != null && br.senac.ead.alerta_verde.utils.security.PasswordEncoder.bCryptEncoder.matches(password, usuario.getSenhaHash())) {
-            return ResponseEntity.ok().build();
+            return ResponseEntity.ok().body(new UsuarioMinDTO(usuario));
         } else {
             return ResponseEntity.status(401).body("Usuário ou senha inválidos");
         }

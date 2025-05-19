@@ -3,10 +3,10 @@ package br.senac.ead.alerta_verde.enums;
 import br.senac.ead.alerta_verde.interfaces.EnumComDescricao;
 
 public enum CategoriaDenunciaEnum implements EnumComDescricao {
-    DESMATAMENTO(0, "Desmatamento"),
-    POLUICAO(1, "Poluição"),
-    ANIMAIS_EM_RISCO(2, "Animais em Risco"),
-    OUTRO(3, "Outro");
+    DESMATAMENTO(0, "DESMATAMENTO"),
+    POLUICAO(1, "POLUICAO"),
+    ANIMAIS_EM_RISCO(2, "ANIMAIS_EM_RISCO"),
+    OUTRO(3, "OUTRO");
 
     private final int id;
     private final String descricao;

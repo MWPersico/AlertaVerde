@@ -11,8 +11,8 @@ public interface DenunciaRepository extends JpaRepository<Denuncia, Integer> {
     @Query("""
         SELECT DISTINCT a
         FROM Denuncia a
-        JOIN FETCH a.usuario
-        JOIN FETCH a.midias
+        LEFT JOIN FETCH a.usuario
+        LEFT JOIN FETCH a.midias
         WHERE a.id = :id
     """)
     Optional<Denuncia> findByIdWithUsuarioAndMidiaDenuncia(Integer id);
@@ -20,8 +20,8 @@ public interface DenunciaRepository extends JpaRepository<Denuncia, Integer> {
     @Query("""
         SELECT a
         FROM Denuncia a
-        JOIN FETCH a.usuario
-        JOIN FETCH a.midias
+        LEFT JOIN FETCH a.usuario
+        LEFT JOIN FETCH a.midias
     """)
     List<Denuncia> findAllWithUsuarioAndMidiaDenuncia();
 }
