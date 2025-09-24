@@ -4,6 +4,8 @@ Este projeto consiste no desenvolvimento de uma plataforma web dedicada ao regis
 
 Entre as funcionalidades estão o registro anônimo, uso de geolocalização, envio de fotos ou vídeos como evidência, e armazenamento seguro das informações. A solução adota práticas ágeis e prioriza a experiência do usuário, oferecendo uma ferramenta confiável para ampliar o alcance da fiscalização ambiental colaborativa.
 
+Indo além do registro de ocorrências, o projeto encontra-se em uma nova fase de aprimoramento. O foco atual é enriquecer a experiência com novas funcionalidades voltadas para o engajamento do usuário, análise de dados através de um painel de estatísticas e a promoção de conteúdo educacional.
+
 
 ---
 
@@ -104,8 +106,12 @@ A api do projeto foi criada utilizando Java com Spring Boot, com banco H2 em mem
 
 ## Telas
 
+Link do protótipo desenvolvido no Figma: [https://www.figma.com/proto/QBQDCs4ICmOVYwBYXoOrz1/PI-Alerta-Verde?node-id=0-1&t=26qlUJ2DnJLmnMqU-1](https://www.figma.com/proto/QBQDCs4ICmOVYwBYXoOrz1/PI-Alerta-Verde?node-id=0-1&t=26qlUJ2DnJLmnMqU-1)
+
 ### **Principais Telas**
 
 ![Prototipo Figma](/Prototipo%20Figma/PI%20Alerta%20Verde.png)
+![Perfil](/Prototipo%20Figma/perfil.png)
+![Estatísticasa](/Prototipo%20Figma/estatistica.png)
 
 
