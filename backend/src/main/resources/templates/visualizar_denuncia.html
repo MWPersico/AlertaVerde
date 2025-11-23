@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Visualizar Denúncia - Alerta Verde</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="blue-page">
+  <a href="/explorar" class="voltar-topo">← Explorar</a>
+
+  <div class="pagina-container">
+    <div class="card-perfil" style="max-width:760px; margin:auto;">
+      <h1 style="color:#222; text-align:left;">Visualizar Denúncia</h1>
+
+      <div id="visualizacao" style="margin-top:8px; text-align:left; color:#222;">
+        <p><strong>Título:</strong> <span id="v-titulo"></span></p>
+        <p><strong>Categoria:</strong> <span id="v-categoria"></span></p>
+        <p><strong>Data:</strong> <span id="v-data"></span></p>
+        <p><strong>Local:</strong> <span id="v-local"></span></p>
+        <p><strong>Descrição:</strong></p>
+        <p id="v-descricao" style="background:#fafafa;padding:10px;border-radius:6px;"></p>
+        <p><strong>Código de rastreamento:</strong> <span id="v-codigo"></span></p>
+        <div id="v-midias" style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;"></div>
+      </div>
+
+      <div style="margin-top:18px; display:flex; gap:8px; justify-content:flex-end;">
+        <a href="/explorar" style="background:#4453c3;color:#fff;padding:8px 12px;border-radius:6px;text-decoration:none;">Voltar</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/visualizar_denuncia.js"></script>
+</body>
+</html>

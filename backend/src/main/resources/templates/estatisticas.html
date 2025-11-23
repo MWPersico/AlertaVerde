@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estatísticas - Alerta Verde</title>
+  <link rel="icon" href="/logo1.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="blue-page">
+  <a href="/explorar" class="voltar-topo">← Explorar</a>
+
+  <div class="pagina-container">
+    <div class="stat-card" style="max-width:760px; margin:auto; padding:20px;">
+      <h1 style="color:#222; text-align:left;">Estatísticas das denúncias</h1>
+      <p class="small-muted" style="text-align:left; margin-top:4px;">Total de denúncias e distribuição por categoria.</p>
+
+      <div style="margin-top:14px; margin-bottom:10px; display:flex; gap:12px; align-items:center;">
+        <div class="stat-card" style="display:inline-block; padding:12px; margin-right:8px;">
+          <div class="value" id="total-denuncias">0</div>
+          <div class="small-muted">Total de denúncias</div>
+        </div>
+      </div>
+
+      <div class="grade-estatisticas" id="grade-estatisticas" style="margin-top:8px;">
+        <!-- cards por categoria -->
+      </div>
+
+      <hr style="border:none; height:1px; background:#eee; margin:18px 0;">
+
+  <h3 style="color:#222; text-align:left;">Mapa de denúncias</h3>
+  <div id="map" style="margin-top:8px; border-radius:8px;"></div>
+
+      <div style="height:12px"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alerta Verde. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/estatisticas.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/mapa.js"></script>
+</body>
+</html>

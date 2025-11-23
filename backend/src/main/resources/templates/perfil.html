@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil - Alerta Verde</title>
+  <link rel="icon" href="/logo1.png" type="image/png">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="robots" content="noindex">
+</head>
+<body class="blue-page">
+  <a href="/explorar" class="voltar-topo">← Explorar</a>
+
+  <div class="pagina-container">
+    <div class="card-perfil" style="max-width:760px; margin:auto;">
+      <img src="/pfp.png" alt="Avatar" id="perfil-img" style="width:100px;height:100px;margin:auto;display:block;">
+      <h2 id="perfil-nome">Usuário</h2>
+      <p class="small-muted" id="perfil-email">email@exemplo.com</p>
+      <p class="small-muted" id="perfil-telefone"></p>
+
+      <div style="display:flex; gap:8px; justify-content:center; margin:12px 0 18px 0;">
+        <button onclick="location.href='/tela_acompanhamento'">Acompanhar</button>
+        <button onclick="sair()" style="background:#ff5252">Sair</button>
+      </div>
+
+      <hr style="border:none; height:1px; background:#eee; margin:12px 0 18px 0;">
+
+      <h3 style="color:#222; text-align:left;">Minhas denúncias</h3>
+      <p class="small-muted" style="text-align:left; margin-top:4px;">Lista das denúncias associadas à sua conta.</p>
+
+      <div class="lista-denuncias" id="lista-denuncias" style="margin-top:12px;">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Alerta Verde. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="/perfil.js"></script>
+</body>
+</html>

@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
       const email = document.getElementById('email').value;
       const telefone = document.getElementById('phone').value;
       const senhaHash = document.getElementById('password').value;
-      // const confirmPassword = document.getElementById('confirm-password').value; // pode validar se quiser
 
       const data = {
         nome,

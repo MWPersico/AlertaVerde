@@ -28,6 +28,7 @@ async function carregarDenuncias() {
             <p><strong>Código de rastreamento:</strong> ${
               denuncia.codigoRastreamento
             }</p>
+            <p style="margin-top:8px"><a href="/visualizar_denuncia?id=${denuncia.id}" style="background:#4453c3;color:#fff;padding:8px 10px;border-radius:6px;text-decoration:none;">Abrir</a></p>
           </div>
         `;
 

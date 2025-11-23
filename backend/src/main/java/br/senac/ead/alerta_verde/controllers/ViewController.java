@@ -44,4 +44,19 @@ public class ViewController {
     public String telaAcompanhamento() {
         return "tela_acompanhamento";
     }
+
+    @GetMapping("/perfil")
+    public String perfil() {
+        return "perfil";
+    }
+
+    @GetMapping("/estatisticas")
+    public String estatisticas() {
+        return "estatisticas";
+    }
+
+    @GetMapping("/visualizar_denuncia")
+    public String visualizarDenuncia() {
+        return "visualizar_denuncia";
+    }
 } 
