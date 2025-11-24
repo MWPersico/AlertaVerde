@@ -114,4 +114,7 @@ Link do protótipo desenvolvido no Figma: [https://www.figma.com/proto/QBQDCs4IC
 ![Perfil](/Prototipo%20Figma/perfil.png)
 ![Estatísticasa](/Prototipo%20Figma/estatistica.png)
 
+## Diagrama de Entidade-Relacionamento (DER)
+
+![Estatísticasa](/Prototipo%20Figma/der_alerta_verde.png)
 
